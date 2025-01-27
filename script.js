@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             li.className = 'task ${task.completed ? "completed" : ""}';
             li.innerHTML = `
                 <span>${task.name}</span>
-                <button class="deleteBtn" data-index="${index}"> X </button>
+                <button class="deleteBtn" data-index="${index}"> ✔ </button>
             `;
             li.addEventListener("click", () => toggleComplete(index));
             taskList.appendChild(li);
