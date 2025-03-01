@@ -1,5 +1,4 @@
 <h1>Gerenciador de Tarefas</h1>
-<img src="">
 <p>Um gerenciador de tarefas simples desenvolvido com JavaScript puro, HTML e CSS.</p>
 <ul><strong>Funcionalidades:</strong>
   <li>Adicionar novas tarefas</li>
