@@ -3,6 +3,7 @@
 <ul><strong>Funcionalidades:</strong>
   <li>Adicionar novas tarefas</li>
   <li>Remover tarefas já concluídas</li>
+  <li>Alternar entre modo claro e escuro</li>
 </ul>
 <ul><strong>Estrutura do Projeto:</strong>
     <li>📂 Gerenciador-de-Tarefas</li>
