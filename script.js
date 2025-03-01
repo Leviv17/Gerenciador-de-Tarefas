@@ -1,4 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById("toggleBtn");
+    const body = document.body;
+    const div = document.querySelectorAll('div');
+    const buttons = document.querySelectorAll('button');
+    if (localStorage.getItem('darkMode') === true) {
+        body.classList.add('dark_mode');
+        div.forEach(div => div.classList.add('dark_mode'));
+        buttons.forEach(button => button.classList.add('dark_mode'));
+        toggleBtn.textContent = "Modo Claro";
+    }
+    toggleBtn.addEventListener('click', () => {
+        const isDarkMode = body.classList.toggle('dark_mode');
+        div.forEach(div => div.classList.toggle('dark_mode', isDarkMode));
+        buttons.forEach(button => button.classList.toggle('dark_mode', isDarkMode));
+        toggleBtn.textContent = isDarkMode ? 'Modo Claro' : 'Modo Escuro';
+        localStorage.setItem('darkMode', isDarkMode);
+    })
+    
+
     const taskInput = document.getElementById('taskInput');
     const addTaskBtn = document.getElementById('addTaskBtn');
     const taskList = document.getElementById('taskList');
@@ -52,6 +71,10 @@ document.addEventListener('DOMContentLoaded', () => {
             deleteTask(index);
         }
     });
-
+    taskInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+            addTask();
+        }
+    });
     renderTasks();
 });
