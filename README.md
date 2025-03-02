@@ -13,6 +13,7 @@
 </ul>
 <ul><strong>Como Usar:</strong>
   <li>Clone este repositório: https://github.com/Leviv17/Gerenciador-de-Tarefas.git</li>
+  <li>Copie os arquivos para um editor de texto(de preferência Visual Studio Code)</li>
   <li>Abra o arquivo index.html no navegador.</li>
   <li>Comece a adicionar e gerenciar suas tarefas!</li>
 </ul>
