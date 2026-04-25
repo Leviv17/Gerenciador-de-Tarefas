@@ -17,6 +17,19 @@ h1 {
     margin-top: 3rem;
 }
 
+div {
+    padding: 2rem;
+    background-color: #7a99a7;
+    box-shadow: #001735;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: 1.5s;
+}
+
 input {
     border-radius: 5px;
     width: 95%;
@@ -24,6 +37,7 @@ input {
     border-style: solid;
     border-color: #001735;
     font-family: 'Jost', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index:0;
 }
 
 button {
@@ -33,6 +47,7 @@ button {
     padding: 0.5rem;
     transition: 1.5s;
     font-family: 'Jost', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index:0;
 }
 
 #addTaskBtn {
