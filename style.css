@@ -17,8 +17,8 @@ h1 {
     margin-top: 3rem;
 }
 
-div {
-    padding: 10px;
+div.textingArea {
+    padding: 2px;
     background-color: #7a99a7;
     box-shadow: #001735;
     display: flex;
